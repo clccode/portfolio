@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+  background-color: rgb(250, 235, 215);
+  color: var(--font-color);
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: rgb(12, 12, 12);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+nav {
+  display: flex;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.globe {
+  height: 300px;
+  width: 250px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
+li a {
+  margin: 0 var(--spacing-3);
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-text-container {
+  margin-right: var(--spacing-3);
+}
+
+.blog {
+  color: blueviolet
+}
+
+#contact {
+  border-bottom: 1px solid var(--font-color);
+}
+
+#footer {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.github {
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .nav-menu {
+    display: inline-block;
+  }
+}
